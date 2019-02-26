@@ -37,7 +37,9 @@ class App < Sinatra::Base
     if @user_operation == 'add'
       @result = @number1.to_i + @number2.to_i
       @result.to_s 
-    elsif
+    elsif @user_operation == 'subtract'
+      @result = @number1.to_i - @number2.to_i 
+      @result.to_s 
     else
     else
     end
