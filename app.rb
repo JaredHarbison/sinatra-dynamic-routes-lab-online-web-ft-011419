@@ -19,10 +19,7 @@ class App < Sinatra::Base
     @user_number.to_i.times do
       @return_string += "#{@user_phrase}"
     end
-  end 
     @return_string
-  end
-
   end
 
 end
