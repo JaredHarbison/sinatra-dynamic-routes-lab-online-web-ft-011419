@@ -34,11 +34,13 @@ class App < Sinatra::Base
   get "/:operation/:number1/:number2" do
     @number1 = params[:number1]
     @number2 = params[:number2]
-    if
+    if @user_operation == 'add'
+      @result = @number1.to_i + @number2.to_i
+      @result.to_s 
     elsif
     else
     else
-    end 
+    end
   end
 
 end
