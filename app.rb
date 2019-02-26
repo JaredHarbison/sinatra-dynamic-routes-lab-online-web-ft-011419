@@ -18,5 +18,5 @@ class App < Sinatra::Base
       @return_string += "#{@phrase}"
     end
     @return_string
-  end 
+  end
 end
