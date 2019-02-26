@@ -16,4 +16,5 @@ class App < Sinatra::Base
   @return_string = ""
   @number.to_i.times do
     @return_string += "#{@phrase}"
+  end 
 end
