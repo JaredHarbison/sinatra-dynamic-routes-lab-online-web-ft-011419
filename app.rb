@@ -43,10 +43,11 @@ class App < Sinatra::Base
     else @user_operation == 'multiply'
       @result = @number1.to_i * @number2.to_i
       @result.to_s
-    else 
+    else
       @result = @number1.to_i / @number2.to_i
       @result.to_s
     end
+  end 
   end
 
 end
